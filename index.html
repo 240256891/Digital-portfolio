@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PRP370S Digital Portfolio - Siphamandla Nkosi</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Digital E-Portfolio: Agile Project Management</h1>
+    <p><strong>Subject:</strong> Project Presentation 3 (PRP370S) | <strong>CPUT</strong></p>
+    <p><strong>Project:</strong> Connectly Platform</p>
+  </header>
+
+  <nav>
+    <a href="#charter">Team Charter</a>
+    <a href="#stories">User Stories</a>
+    <a href="#backlog">Product Backlog</a>
+    <a href="#sprint">Sprint Backlog</a>
+    <a href="#logbook">Agile Logbook</a>
+  </nav>
+
+  <main class="container">
+
+    <!-- Section 1: Team Charter -->
+    <section id="charter" class="card">
+      <h2>1. Agile Team Charter</h2>
+      <h3>Evidence</h3>
+      <p>Our team charter serves as a working contract outlining roles, communication agreements, and values.</p>
+      <ul>
+        <li><strong>Role:</strong> Database Developer (Schema design, SQL execution, Query performance)</li>
+        <li><strong>Artifact Link:</strong> <a href="https://github.com" target="_blank">View Team Charter Document</a></li>
+      </ul>
+      <h3>Reflection</h3>
+      <p>Defining clear working agreements early mitigated communication friction during backend integration. Aligning data models prior to development prevented schema mismatches during sprint cycles.</p>
+    </section>
+
+    <!-- Section 2: User Stories -->
+    <section id="stories" class="card">
+      <h2>2. User Stories and Tasks</h2>
+      <h3>Evidence</h3>
+      <p>User stories focus on user value and form the basis of our task breakdowns on Trello.</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Story ID</th>
+            <th>User Story</th>
+            <th>Tasks</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>US-01</td>
+            <td>As a job seeker, I want to filter local job listings by category so that I can find work nearby.</td>
+            <td>1. Build SQL index<br>2. Develop REST endpoint<br>3. Connect search UI</td>
+          </tr>
+        </tbody>
+      </table>
+      <h3>Reflection</h3>
+      <p>Deconstructing features into granular tasks ensured that database schemas were directly aligned with business features, avoiding unnecessary data redundancy.</p>
+    </section>
+
+    <!-- Section 3: Product Backlog -->
+    <section id="backlog" class="card">
+      <h2>3. Product Backlog</h2>
+      <h3>Evidence</h3>
+      <p>Prioritized using the MoSCoW framework to manage core deliverables.</p>
+      <ul>
+        <li><strong>Must Have:</strong> User Auth, Job Posting Storage Engine, Search & Filter</li>
+        <li><strong>Should Have:</strong> In-App Employer Communication</li>
+        <li><strong>Could Have:</strong> Job Rating System</li>
+      </ul>
+      <h3>Reflection</h3>
+      <p>Continuous backlog prioritization forced us to evaluate technical dependencies early, proving that database structural setup must precede complex query features.</p>
+    </section>
+
+    <!-- Section 4: Sprint Backlog -->
+    <section id="sprint" class="card">
+      <h2>4. Sprint Backlog</h2>
+      <h3>Evidence</h3>
+      <p>Focuses on delivering a functional search and filtering MVP for local users.</p>
+      <ul>
+        <li><strong>Sprint Goal:</strong> Build end-to-end local search and filtering capabilities.</li>
+        <li><strong>Status:</strong> Relational schema created, search stored procedures active, API integrated.</li>
+      </ul>
+      <h3>Reflection</h3>
+      <p>Keeping sprint commitments tightly focused prevented scope creep and allowed all planned story points to be completed on time.</p>
+    </section>
+
+    <!-- Section 5: Agile Logbook -->
+    <section id="logbook" class="card">
+      <h2>5. Agile Logbook</h2>
+      <h3>Evidence</h3>
+      <p>Daily stand-up logs and retrospective action items track progress and operational blockers.</p>
+      <blockquote>
+        <strong>Stand-Up Excerpt:</strong> Finalized database queries for category filtering; integrated endpoints with frontend UI.
+      </blockquote>
+      <h3>Reflection</h3>
+      <p>Maintaining a daily log provided operational visibility, ensuring continuous delivery across all project milestones.</p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Cape Peninsula University of Technology — PRP370S Assessment 2</p>
+  </footer>
+
+</body>
+</html>
