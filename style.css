@@ -1,3 +1,4 @@
+/* Reset & Base Styles */
 * {
   box-sizing: border-box;
 }
@@ -19,7 +20,7 @@ a {
   color: inherit;
 }
 
-/* Hero Section & Navigation */
+/* Hero Header & Navigation */
 .hero {
   background: linear-gradient(135deg, #102a43, #1d4e89);
   color: white;
@@ -40,6 +41,7 @@ a {
   font-weight: 800;
   text-decoration: none;
   letter-spacing: .04em;
+  font-size: 1.1rem;
 }
 
 .navlinks {
@@ -58,6 +60,7 @@ a {
   text-decoration: underline;
 }
 
+/* Hero Content & Identity Badges */
 .hero-content {
   max-width: 1000px;
   margin: 70px auto 0;
@@ -68,12 +71,14 @@ a {
   letter-spacing: .14em;
   font-weight: 800;
   color: #83d5f5;
+  text-transform: uppercase;
 }
 
 .hero h1 {
-  font-size: clamp(2.6rem, 7vw, 5rem);
-  line-height: 1.03;
+  font-size: clamp(2.6rem, 7vw, 4.5rem);
+  line-height: 1.05;
   margin: 18px 0;
+  font-weight: 800;
 }
 
 .hero h1 span {
@@ -94,14 +99,15 @@ a {
 }
 
 .identity span {
-  padding: 9px 13px;
+  padding: 9px 15px;
   border: 1px solid #ffffff55;
   border-radius: 8px;
   background: #ffffff10;
   font-size: .9rem;
+  color: #ffffff;
 }
 
-/* Main Layout & Grid */
+/* Main Layout & Overview Grid */
 main {
   max-width: 1100px;
   margin: auto;
@@ -122,8 +128,10 @@ main {
 .overview > p:not(.eyebrow) {
   max-width: 800px;
   color: #536273;
+  font-size: 1.05rem;
 }
 
+/* 4-Step Process Cards (Collect, Select, Reflect, Connect) */
 .steps {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -138,26 +146,28 @@ main {
   background: white;
   border: 1px solid #e0e6ee;
   border-radius: 14px;
-  padding: 20px;
+  padding: 22px;
   box-shadow: 0 6px 20px #152b4510;
 }
 
 .steps strong {
   color: #176b9a;
-  font-size: 1.25rem;
+  font-size: 1.3rem;
+  display: block;
 }
 
 .steps h3 {
   margin: 8px 0;
+  font-size: 1.1rem;
 }
 
 .steps p {
   margin: 0;
   color: #5b6878;
-  font-size: .93rem;
+  font-size: .92rem;
 }
 
-/* Portfolio Content Sections */
+/* Content Sections & Headings */
 .portfolio-section {
   padding: 48px 0;
   border-top: 1px solid #dce3ec;
@@ -181,8 +191,10 @@ main {
   color: #596879;
   margin-top: 0;
   margin-bottom: 24px;
+  font-size: 1.05rem;
 }
 
+/* Two Column Layout */
 .two-col {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -191,47 +203,36 @@ main {
 
 .panel h3 {
   margin-top: 0;
+  color: #102a43;
 }
 
 .panel ul {
   padding-left: 20px;
-}
-
-.placeholder {
-  min-height: 150px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 20px;
-  border: 2px dashed #9db3c8;
-  background: #f3f7fb;
-  border-radius: 10px;
-  color: #47647c;
-  font-weight: 800;
-  font-size: .9rem;
-}
-
-.caption {
-  font-size: .84rem;
-  color: #667587;
   margin-bottom: 0;
 }
 
+.panel ul li {
+  margin-bottom: 8px;
+}
+
+/* Reflection Box */
 .reflection {
-  margin-top: 18px;
-  border-left: 4px solid #2686ad;
+  margin-top: 20px;
+  border-left: 5px solid #2686ad;
+  background: #fdfdfd;
 }
 
 .reflection h3 {
   margin-top: 0;
+  color: #1476a5;
 }
 
 .reflection p {
   margin-bottom: 0;
+  color: #334155;
 }
 
-/* Tables */
+/* Data Tables */
 .overflow {
   overflow-x: auto;
   margin: 18px 0;
@@ -247,37 +248,27 @@ table {
 th, td {
   text-align: left;
   vertical-align: top;
-  padding: 12px;
+  padding: 12px 16px;
   border-bottom: 1px solid #e1e7ef;
 }
 
 th {
   background: #edf4f9;
   color: #183b56;
+  font-weight: bold;
 }
 
 td {
   background: #fff;
 }
 
-/* Final Reflection & Footer */
-.final-reflection {
-  background: #eaf3fa;
-  border: 0;
-  border-radius: 16px;
-  padding: 34px;
-  margin: 38px 0;
-}
-
-.final-reflection .panel {
-  box-shadow: none;
-}
-
+/* Footer Section */
 footer {
   background: #102a43;
   color: #e8f1fa;
-  padding: 28px 6vw;
+  padding: 32px 6vw;
   text-align: center;
+  margin-top: 60px;
 }
 
 footer p {
@@ -289,8 +280,8 @@ footer p {
   color: #b8cadc;
 }
 
-/* Responsive Media Queries */
-@media (max-width: 760px) {
+/* Responsive Styles for Mobile & Tablets */
+@media (max-width: 820px) {
   .hero {
     padding-bottom: 48px;
   }
@@ -311,14 +302,14 @@ footer p {
     margin-bottom: 8px;
   }
   .navlinks {
-    gap: 10px;
+    gap: 12px;
   }
   .navlinks a {
-    font-size: .82rem;
+    font-size: .85rem;
   }
 }
 
-@media (max-width: 440px) {
+@media (max-width: 480px) {
   .steps {
     grid-template-columns: 1fr;
   }
