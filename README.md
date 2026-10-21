@@ -16,3 +16,5 @@ This repository contains the interactive Digital E-Portfolio for the **Connectly
 
 ## Live Site
 [View Digital E-Portfolio]
+
+https://240256891.github.io/Digital-portfolio/
