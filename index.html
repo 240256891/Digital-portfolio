@@ -3,108 +3,252 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PRP370S Digital Portfolio - Siphamandla Nkosi</title>
+  <title>PRP370 Portfolio - Siphamandla Nkosi</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header>
-    <h1>Digital E-Portfolio: Agile Project Management</h1>
-    <p><strong>Subject:</strong> Project Presentation 3 (PRP370S) | <strong>CPUT</strong></p>
-    <p><strong>Project:</strong> Connectly Platform</p>
+  <!-- Hero Header Section -->
+  <header class="hero">
+    <nav>
+      <a href="#" class="brand">PRP370 Portfolio</a>
+      <div class="navlinks">
+        <a href="#charter">Team Charter</a>
+        <a href="#stories">User Stories</a>
+        <a href="#backlog">Product Backlog</a>
+        <a href="#sprint">Sprint Backlog</a>
+        <a href="#logbook">Logbook</a>
+      </div>
+    </nav>
+
+    <div class="hero-content">
+      <p class="eyebrow">PROJECT PRESENTATION 3 • ASSESSMENT 2 • OCTOBER 2026</p>
+      <h1>My Agile Project <br><span>Digital Portfolio</span></h1>
+      <p class="intro">A collection of project artefacts, evidence, and reflections showing how I planned work, collaborated, tracked progress, and learned through Agile practices.</p>
+      
+      <div class="identity">
+        <span><strong>Student:</strong> Siphamandla Nkosi</span>
+        <span><strong>Student number:</strong> 240256891</span>
+        <span><strong>Project:</strong> Connectly</span>
+      </div>
+    </div>
   </header>
 
-  <nav>
-    <a href="#charter">Team Charter</a>
-    <a href="#stories">User Stories</a>
-    <a href="#backlog">Product Backlog</a>
-    <a href="#sprint">Sprint Backlog</a>
-    <a href="#logbook">Agile Logbook</a>
-  </nav>
+  <main>
+    <!-- Portfolio Overview Section -->
+    <section class="overview">
+      <p class="eyebrow">PORTFOLIO OVERVIEW</p>
+      <h2>From evidence to reflection</h2>
+      <p>This portfolio follows the assessment brief's e-portfolio approach: collect relevant artefacts, select evidence that demonstrates learning, reflect on development, and connect the artefacts into a coherent account.</p>
 
-  <main class="container">
-
-    <!-- Section 1: Team Charter -->
-    <section id="charter" class="card">
-      <h2>1. Agile Team Charter</h2>
-      <h3>Evidence</h3>
-      <p>Our team charter serves as a working contract outlining roles, communication agreements, and values.</p>
-      <ul>
-        <li><strong>Role:</strong> Database Developer (Schema design, SQL execution, Query performance)</li>
-        <li><strong>Artifact Link:</strong> <a href="https://github.com" target="_blank">View Team Charter Document</a></li>
-      </ul>
-      <h3>Reflection</h3>
-      <p>Defining clear working agreements early mitigated communication friction during backend integration. Aligning data models prior to development prevented schema mismatches during sprint cycles.</p>
+      <div class="steps">
+        <article>
+          <strong>01</strong>
+          <h3>Collect</h3>
+          <p>Gather project records, screenshots, links, and dated artefacts.</p>
+        </article>
+        <article>
+          <strong>02</strong>
+          <h3>Select</h3>
+          <p>Choose evidence that directly supports each section.</p>
+        </article>
+        <article>
+          <strong>03</strong>
+          <h3>Reflect</h3>
+          <p>Explain what the evidence shows and what you learned.</p>
+        </article>
+        <article>
+          <strong>04</strong>
+          <h3>Connect</h3>
+          <p>Show how the artefacts fit together across the project.</p>
+        </article>
+      </div>
     </section>
 
-    <!-- Section 2: User Stories -->
-    <section id="stories" class="card">
-      <h2>2. User Stories and Tasks</h2>
-      <h3>Evidence</h3>
-      <p>User stories focus on user value and form the basis of our task breakdowns on Trello.</p>
-      <table>
-        <thead>
-          <tr>
-            <th>Story ID</th>
-            <th>User Story</th>
-            <th>Tasks</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>US-01</td>
-            <td>As a job seeker, I want to filter local job listings by category so that I can find work nearby.</td>
-            <td>1. Build SQL index<br>2. Develop REST endpoint<br>3. Connect search UI</td>
-          </tr>
-        </tbody>
-      </table>
-      <h3>Reflection</h3>
-      <p>Deconstructing features into granular tasks ensured that database schemas were directly aligned with business features, avoiding unnecessary data redundancy.</p>
+    <!-- 1. Agile Team Charter -->
+    <section id="charter" class="portfolio-section">
+      <div class="section-head">
+        <span>SECTION 01</span>
+        <h2>Agile Team Charter</h2>
+      </div>
+      <p class="section-lead">A social contract defining team purpose, roles, working agreements, and operational boundaries.</p>
+
+      <div class="two-col">
+        <div class="panel evidence">
+          <h3>Evidence & Artifacts</h3>
+          <ul>
+            <li><strong>Role:</strong> Database Developer (Database design, schema implementation, SQL query optimization)</li>
+            <li><strong>Core Values:</strong> Transparency, peer code reviews, daily stand-up communication</li>
+            <li><strong>Working Agreements:</strong> Trello for task tracking, Git branching strategy for features</li>
+          </ul>
+        </div>
+        <div class="panel">
+          <h3>Core Objective</h3>
+          <p>Establish clear operational guidelines to reduce friction, resolve team conflicts quickly, and ensure clear database integration contracts across backend services.</p>
+        </div>
+      </div>
+
+      <div class="reflection">
+        <h3>Reflection & Learning</h3>
+        <p>Building the Agile Team Charter provided crucial insight into how explicit team agreements directly minimize friction during high-pressure development cycles. As a Database Developer, defining clear boundaries around data requirements early in the project prevented scope creep and database schema mismatches during API integration.</p>
+      </div>
     </section>
 
-    <!-- Section 3: Product Backlog -->
-    <section id="backlog" class="card">
-      <h2>3. Product Backlog</h2>
-      <h3>Evidence</h3>
-      <p>Prioritized using the MoSCoW framework to manage core deliverables.</p>
-      <ul>
-        <li><strong>Must Have:</strong> User Auth, Job Posting Storage Engine, Search & Filter</li>
-        <li><strong>Should Have:</strong> In-App Employer Communication</li>
-        <li><strong>Could Have:</strong> Job Rating System</li>
-      </ul>
-      <h3>Reflection</h3>
-      <p>Continuous backlog prioritization forced us to evaluate technical dependencies early, proving that database structural setup must precede complex query features.</p>
+    <!-- 2. User Stories and Tasks -->
+    <section id="stories" class="portfolio-section">
+      <div class="section-head">
+        <span>SECTION 02</span>
+        <h2>User Stories and Tasks</h2>
+      </div>
+      <p class="section-lead">Short, simple descriptions of software features from the end-user's perspective, broken into actionable tasks.</p>
+
+      <div class="overflow">
+        <table>
+          <thead>
+            <tr>
+              <th>Story ID</th>
+              <th>User Story</th>
+              <th>Acceptance Criteria</th>
+              <th>Task Breakdown</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>US-01</strong></td>
+              <td>As a job seeker in Belhar, I want to filter local job listings by skill category so that I can quickly find relevant work.</td>
+              <td>• Category dropdown functional<br>• DB query < 200ms<br>• Dynamic UI updates</td>
+              <td>1. Design SQL index for job categories.<br>2. Build REST endpoint.<br>3. Connect search UI.</td>
+            </tr>
+            <tr>
+              <td><strong>US-02</strong></td>
+              <td>As an employer, I want to post a new job with budget details so that local workers can apply.</td>
+              <td>• Form input validation<br>• Secure database persistence<br>• Success feedback message</td>
+              <td>1. Implement job_posts schema.<br>2. Build API validation logic.<br>3. Construct web form.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="reflection">
+        <h3>Reflection & Learning</h3>
+        <p>Breaking high-level platform requirements down into atomic user stories shifted our focus from simply writing code to delivering measurable end-user value. Connecting user stories directly to granular backend and database tasks ensured that database schemas were created specifically to serve business logic, rather than designed in isolation.</p>
+      </div>
     </section>
 
-    <!-- Section 4: Sprint Backlog -->
-    <section id="sprint" class="card">
-      <h2>4. Sprint Backlog</h2>
-      <h3>Evidence</h3>
-      <p>Focuses on delivering a functional search and filtering MVP for local users.</p>
-      <ul>
-        <li><strong>Sprint Goal:</strong> Build end-to-end local search and filtering capabilities.</li>
-        <li><strong>Status:</strong> Relational schema created, search stored procedures active, API integrated.</li>
-      </ul>
-      <h3>Reflection</h3>
-      <p>Keeping sprint commitments tightly focused prevented scope creep and allowed all planned story points to be completed on time.</p>
+    <!-- 3. Product Backlog -->
+    <section id="backlog" class="portfolio-section">
+      <div class="section-head">
+        <span>SECTION 03</span>
+        <h2>Product Backlog</h2>
+      </div>
+      <p class="section-lead">A prioritized list of features, improvements, and system tasks managed using MoSCoW prioritization.</p>
+
+      <div class="overflow">
+        <table>
+          <thead>
+            <tr>
+              <th>Priority</th>
+              <th>Item ID</th>
+              <th>Feature Description</th>
+              <th>Story Points</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Must Have</strong></td>
+              <td>PB-01</td>
+              <td>User Authentication & Profile Management (Employers & Job Seekers)</td>
+              <td>8</td>
+            </tr>
+            <tr>
+              <td><strong>Must Have</strong></td>
+              <td>PB-02</td>
+              <td>Job Posting Creation & Storage Engine</td>
+              <td>5</td>
+            </tr>
+            <tr>
+              <td><strong>Must Have</strong></td>
+              <td>PB-03</td>
+              <td>Search & Filter Engine for Local Opportunities</td>
+              <td>5</td>
+            </tr>
+            <tr>
+              <td><strong>Should Have</strong></td>
+              <td>PB-04</td>
+              <td>In-App Messaging between Employers and Applicants</td>
+              <td>8</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="reflection">
+        <h3>Reflection & Learning</h3>
+        <p>Managing the Product Backlog demonstrated the importance of continuous backlog grooming. Prioritizing features using the MoSCoW matrix required balancing technical feasibility with business impact for our community job platform. Technical debt and architecture planning directly influence product backlog ordering.</p>
+      </div>
     </section>
 
-    <!-- Section 5: Agile Logbook -->
-    <section id="logbook" class="card">
-      <h2>5. Agile Logbook</h2>
-      <h3>Evidence</h3>
-      <p>Daily stand-up logs and retrospective action items track progress and operational blockers.</p>
-      <blockquote>
-        <strong>Stand-Up Excerpt:</strong> Finalized database queries for category filtering; integrated endpoints with frontend UI.
-      </blockquote>
-      <h3>Reflection</h3>
-      <p>Maintaining a daily log provided operational visibility, ensuring continuous delivery across all project milestones.</p>
+    <!-- 4. Sprint Backlog -->
+    <section id="sprint" class="portfolio-section">
+      <div class="section-head">
+        <span>SECTION 04</span>
+        <h2>Sprint Backlog</h2>
+      </div>
+      <p class="section-lead">An actionable plan outlining specific work needed to achieve the sprint goal.</p>
+
+      <div class="two-col">
+        <div class="panel">
+          <h3>Sprint Goal</h3>
+          <p>Deliver a functional MVP core enabling local job seekers to search, filter, and view details for active job listings in Belhar.</p>
+        </div>
+        <div class="panel evidence">
+          <h3>Sprint Deliverables</h3>
+          <ul>
+            <li>Relational SQL schema created for Users and Job Posts</li>
+            <li>Stored procedures implemented for category filtering</li>
+            <li>API controllers connected to search UI</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="reflection">
+        <h3>Reflection & Learning</h3>
+        <p>The Sprint Backlog translated strategic product goals into immediate operational execution over a fixed iteration. Reflecting on sprint execution revealed how database preparedness directly impacts sprint velocity. Having predefined SQL models ready at the start of the sprint enabled backend API development to proceed smoothly.</p>
+      </div>
+    </section>
+
+    <!-- 5. Agile Logbook -->
+    <section id="logbook" class="portfolio-section">
+      <div class="section-head">
+        <span>SECTION 05</span>
+        <h2>Agile Logbook</h2>
+      </div>
+      <p class="section-lead">Daily stand-ups, sprint tracking, and retrospective improvements throughout the project lifecycle.</p>
+
+      <div class="two-col">
+        <div class="panel">
+          <h3>Daily Stand-Up Excerpt</h3>
+          <p><strong>Completed:</strong> Normalized database schemas for job filtering.</p>
+          <p><strong>Planned:</strong> Optimize indexing for high-frequency search queries.</p>
+          <p><strong>Blockers:</strong> Resolved API payload format agreements with backend team.</p>
+        </div>
+        <div class="panel">
+          <h3>Retrospective Action Item</h3>
+          <p>Early alignment between database structures and API requirements prevented integration bugs. For future sprints, conduct brief technical spikes prior to estimating UI integration tasks.</p>
+        </div>
+      </div>
+
+      <div class="reflection">
+        <h3>Reflection & Learning</h3>
+        <p>Maintaining a daily Agile Logbook provided a transparent, traceable record of individual contributions, blockers, and continuous team improvements. Looking across the complete portfolio, the Logbook ties together the Team Charter, Backlogs, and User Stories into a cohesive account of software delivery.</p>
+      </div>
     </section>
 
   </main>
 
   <footer>
-    <p>&copy; 2026 Cape Peninsula University of Technology — PRP370S Assessment 2</p>
+    <p> Cape Peninsula University of Technology • Project Presentation 3 (PRP370S)</p>
+    <p class="small">Siphamandla Nkosi (240256891) — Digital Portfolio Assessment 2</p>
   </footer>
 
 </body>
